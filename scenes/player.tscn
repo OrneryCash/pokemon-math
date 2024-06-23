@@ -187,15 +187,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vseud"]
-size = Vector2(20, 11)
+size = Vector2(11, 7.5)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 1
+y_sort_enabled = true
 script = ExtResource("1_12gic")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r6nwp")
 animation = &"idle_up"
+offset = Vector2(2.08165e-12, -13.9)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 8.5)
+position = Vector2(0.5, -4.25)
 shape = SubResource("RectangleShape2D_vseud")
